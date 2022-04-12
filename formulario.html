@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- O defer serve para atrasar a ativação do JS, deixando todo o conteúdo da web carregar e ai sim ativar as funções JS. -->
+    <script src="./javascript/script-form.js" defer></script>
+    
+    <title>Miyaki Studio</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <ul class="menu">
+                <li class="menu-lista"><a href="index.html">Início</a></li>
+                <li class="menu-lista"><a href="formulario.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="" name="formulario" id="formulario" method="post" class="wholeform">
+        <h2 class="form-title">Envie-nos uma mensagem!</h2>
+
+            <div class="fields">  
+                <h3>Informações</h3>  
+                <div class="formname">
+                    <input type="text" name="fname" id="fname" required>
+                    <label for="fname">Primeiro Nome:</label>
+                    <span class="error"></span>
+                </div>
+                <div class="formlastname">    
+                    <input type="text" name="lastname" id="lname" required>
+                    <label for="lname">Sobrenome:</label>
+                    <span class="error"></span>
+                </div>
+                <hr>
+                <h3>Contato</h3>
+                <div class="formemail">
+                    <input required type="email" name="email" id="mail" class="mail" >
+                    <label for="email">E-mail:</label>
+                    <span class="error"></span>
+                </div>
+                <div class="formtel">
+                    <input type="number" name="tel" id="tel" required>
+                    <label for="tel">Telefone:</label>
+                    <span class="error"></span>
+                </div>
+                <hr>
+                <h3>Mensagem</h3>
+                <div class="formmessage">
+                   
+                    <textarea name="message" id="message" placeholder="Digite aqui sua mensagem." required></textarea>
+                </div>
+                <div class="formbutton">
+                    <button type="submit" class="button" id="submit" onclick="enviar()">Enviar</button>
+                </div>
+                <div class="submit-msg">
+                <p id="menssagem-cadastro"></p>
+                </div>
+            </div> 
+        </form>       
+</body>
+<footer>
+
+    <div>   &copy;Miyaki Studio | Todos os Direitos Reservados</div>
+</footer>
+</html>

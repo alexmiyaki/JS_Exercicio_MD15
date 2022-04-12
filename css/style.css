@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;400;500;900&display=swap');
+
+* {
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    height: 50px;
+    border-bottom: .5px solid;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 20px;
+}
+
+
+.menu-lista {
+    list-style-type: none;
+    text-decoration-style: none;
+}
+
+.menu-lista a {
+    text-decoration: none;
+    color: #2D2E87;
+    font-size: 20px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 900;
+}
+
+#logo {
+    display: block;
+    height: 400px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.wholeform {
+    width: 60%;
+    height: auto;
+    margin: 50px auto;
+    padding: 10px;
+    border: 2px solid #2D2E87 ;
+    display: flex;
+    flex-direction: column;
+}
+
+.formname,
+.formlastname,
+.formemail,
+.formtel,
+.formmessage {
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+    padding: 0 20px;
+}
+
+.formlastname input,
+.formname input,
+.formemail input,
+.formtel input {
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid #2D2E87;
+    background-color: transparent;
+    /* Outline none para tirar a linha quando o input estiver selecionado */
+    outline: none;
+    font: 1em;
+}
+
+
+
+
+input ~ label {
+    padding: 0 20px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    color: rgba(0, 0, 0, .6);
+
+    transition: .4s;
+}
+
+
+/* :valid para o label não descer depois de preenchido o input. */
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-22px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+.input span.error {
+    display: flex;
+    
+    padding: 0;
+
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+
+hr {
+    margin: 20px 0;
+}
+
+h3 {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    color: #2D2E87;
+    font-weight: 600;
+}
+
+
+
+.form-title {
+    font-weight: 600;
+    margin: 5px auto;
+    color: #2D2E87;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+    outline: none;
+    border: 2px solid #2D2E87;
+}
+
+.formbutton {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+input,
+button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+button {
+    
+    color: white;
+    background-color: #2D2E87;
+    height: 30px;
+    width: 100px;
+    border: 1px solid #2D2E87;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px black;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #2D2E87;
+}
+
+.submit-msg {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    color: red;
+}
+
+footer {
+
+    border-top: .5px solid;
+    padding: 20px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    height: 600px;
+    background-color: whitesmoke;
+}
+
